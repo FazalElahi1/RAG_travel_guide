@@ -1,0 +1,43 @@
+requirements to run the project.ipynb file on Colab
+					Install these libraries using pip
+
+!pip install bs4
+!pip install wikitextparser
+!pip install sentence-transformers
+!pip install faiss-cpu
+
+
+					Import these libraries 
+
+import requests
+from bs4 import BeautifulSoup
+import wikitextparser as wtp
+from transformers import pipeline
+import time
+import json
+import re
+import nltk
+import string
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize, sent_tokenize
+import faiss
+from collections import Counter
+from collections import OrderedDict
+import numpy as np
+import pandas as pd
+from sentence_transformers import SentenceTransformer
+from transformers import BartTokenizer, BartForConditionalGeneration
+from collections import OrderedDict
+
+				
+
+					Install these files using nltk
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+nltk.download("omw-1.4")
+nltk.download('wordnet')
+stop_words = set(stopwords.words("english"))
+
+
