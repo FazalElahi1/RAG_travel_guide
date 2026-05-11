@@ -21,11 +21,10 @@ This project combines **Large Language Models + Vector Search + Knowledge Retrie
 ## 🏗️ Tech Stack
 
 - 🐍 Python
-- 🤖 LangChain / LLM framework (if used)
-- 📦 FAISS / ChromaDB (Vector Database)
-- 🔤 OpenAI / HuggingFace Embeddings
+- 📦 FAISS (Vector Database)
+- 🔤 HuggingFace Embeddings
 - 📊 Pandas (for data handling)
-- 🧾 Streamlit / Flask (if UI included)
+- 🧾 Web Scraping (Beautiful Soup)
 
 ---
 
@@ -33,9 +32,10 @@ This project combines **Large Language Models + Vector Search + Knowledge Retrie
 
 1. 📥 User asks a travel-related question  
 2. 🔍 Query is converted into embeddings  
-3. 📚 Relevant documents are retrieved from vector store  
-4. 🧠 LLM generates response using retrieved context  
-5. 💬 Final answer is displayed to user  
+3. 📚 Relevant documents are retrieved from vector store
+4. 🔺 Query Expansion of the prompted query
+5. 🧠 LLM generates response using retrieved context
+6. 💬 Final answer is displayed to user  
 
 ---
 
@@ -44,8 +44,8 @@ This project combines **Large Language Models + Vector Search + Knowledge Retrie
 ```
 
 RAG_travel_guide/
-│── documetation/                # Travel dataset / documents
-│── trael guide.py               # Main application file
+│── documetation/        # Travel dataset / documents
+│── trael guide.py       # Main application file
 │── requirements.txt     # Dependencies
 │── README.md            # Project documentation
 
@@ -55,11 +55,6 @@ RAG_travel_guide/
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/FazalElahi1/RAG_travel_guide.git
-cd RAG_travel_guide
-````
 
 ### 2️⃣ Create virtual environment
 
@@ -82,13 +77,6 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
-If using Streamlit:
-
-```bash
-streamlit run app.py
-```
-
 
 ---
 
@@ -132,7 +120,7 @@ This project is licensed under the MIT License.
 
 **Fazal Elahi**
 💼 Data Science & AI Enthusiast
-📧 [Add your email here]
+📧 [f.elahi1767@gail.com]
 🔗 [GitHub Profile](https://github.com/FazalElahi1)
 
 ---
@@ -140,4 +128,3 @@ This project is licensed under the MIT License.
 ⭐ If you like this project, don't forget to star the repo!
 
 ```
-
